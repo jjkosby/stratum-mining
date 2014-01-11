@@ -13,6 +13,7 @@ The goal is to make a reliable stratum mining server for scrypt based coins. Ove
 * Solved Block Confirmation
 * Job Based Vardiff support
 * Solution Block Hash Support
+* *NEW* HibridScryptSha256 Algorithm Support
 * *NEW* SHA256 and Scrypt Algo Support 
 * Log Rotation
 * Initial low difficulty share confirmation
