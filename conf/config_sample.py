@@ -9,12 +9,12 @@ You NEED to set the parameters in BASIC SETTINGS
 # ******************** BASIC SETTINGS ***************
 # These are the MUST BE SET parameters!
 
-CENTRAL_WALLET = 'set_valid_addresss_in_config!'	# local coin address where money goes
+CENTRAL_WALLET = 'MxxxxxCHANGEME...... set_valid_addresss_in_config!'	# local coin address where money goes
 
 COINDAEMON_TRUSTED_HOST = 'localhost'
 COINDAEMON_TRUSTED_PORT = 9372
-COINDAEMON_TRUSTED_USER = 'user'
-COINDAEMON_TRUSTED_PASSWORD = 'somepassword'
+COINDAEMON_TRUSTED_USER = 'mediterraneancoinrpc'
+COINDAEMON_TRUSTED_PASSWORD = 'somepasswordCHANGEME'
 
 # Coin Algorithm is the option used to determine the algortithm used by stratum
 # This currently works with POW and POS coins
@@ -47,7 +47,7 @@ STRATUM_MINING_PROCESS_NAME= 'twistd-stratum-mining'
 
 
 # Enable some verbose debug (logging requests and responses).
-DEBUG = False
+DEBUG = True 
 
 # Destination for application logs, files rotated once per day.
 LOGDIR = 'log/'
@@ -104,7 +104,7 @@ DB_PGSQL_PASS = '**empty**'
 DB_PGSQL_SCHEMA = 'public'
 # MySQL
 DB_MYSQL_HOST = 'localhost'
-DB_MYSQL_DBNAME = 'pooldb'
+DB_MYSQL_DBNAME = 'mpos'
 DB_MYSQL_USER = 'pooldb'
 DB_MYSQL_PASS = '**empty**'
 DB_MYSQL_PORT = 3306		# Default port for MySQL
