@@ -37,7 +37,7 @@ def setup(on_startup):
     # Check the results:
     #         - getblocktemplate is avalible        (Die if not)
     #         - we are not still downloading the blockchain        (Sleep)
-    log.info("Connecting to litecoind...")
+    log.info("Connecting to mediterraneancoind...")
     while True:
         try:
             result = (yield bitcoin_rpc.getblocktemplate())
