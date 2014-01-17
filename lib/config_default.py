@@ -111,7 +111,7 @@ COINDAEMON_TRUSTED_PASSWORD = '***somepassword***'
 # For SHA256 PoS Coins which support TX Messages please enter yes in the TX sel$
 COINDAEMON_ALGO = 'hybridsch256'
 COINDAEMON_Reward = 'POW'
-COINDAEMON_SHA256_TX = 'yes'
+COINDAEMON_SHA256_TX = 'no'
 
 # ******************** OTHER CORE SETTINGS *********************
 # Use "echo -n '<yourpassword>' | sha256sum | cut -f1 -d' ' "
