@@ -13,6 +13,6 @@
 [submodule "externals/medcoin_hybrid"]
 	path = externals/medcoin_hybrid
 	url = https://github.com/mrtexaznl/medcoin_hybrid
-[submodule "EXTERN~1/stratum"]
-	path = EXTERN~1/stratum
-	url = https://github.com/mrtexaznl/stratum
+[submodule "externals/stratum"]
+        path = externals/stratum
+        url = https://github.com/mrtexaznl/stratum
