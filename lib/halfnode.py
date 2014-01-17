@@ -242,6 +242,8 @@ class CBlock(object):
 	        self.scrypt = None
         elif settings.COINDAEMON_ALGO == 'quark':
                 self.quark = None
+        elif settings.COINDAEMON_ALGO == 'hybridsch256':
+                self.hybridsch256 = None                
 	else: pass
 	if settings.COINDAEMON_Reward == 'POS':
 		self.signature = b""
