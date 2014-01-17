@@ -306,8 +306,8 @@ class CBlock(object):
                 r.append(struct.pack("<I", self.nTime))
                 r.append(struct.pack("<I", self.nBits))
                 r.append(struct.pack("<I", self.nNonce))
-                self.quark = uint256_from_str(medcoin_hybrid.getPoWHash(''.join(r)))
-             return self.quark        
+                self.hybridsch256 = uint256_from_str(medcoin_hybrid.getPoWHash(''.join(r)))
+             return self.hybridsch256        
     else:
        def calc_sha256(self):
            if self.sha256 is None:
@@ -338,6 +338,9 @@ class CBlock(object):
         elif settings.COINDAEMON_ALGO == 'quark':
 	   if self.quark > target:
                 return false
+        elif settings.COINDAEMON_ALGO == 'hybridsch256':
+	   if self.hybridsch256 > target:
+                return false        
 	else:
 	   if self.sha256 > target:
            	return False
