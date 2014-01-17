@@ -1,4 +1,4 @@
-WORK IN PROGRESS!! DO NOT USE YET!!
+Beta quality. Can be tested...
 ============
 
 
