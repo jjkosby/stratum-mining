@@ -9,22 +9,22 @@ You NEED to set the parameters in BASIC SETTINGS
 # ******************** BASIC SETTINGS ***************
 # These are the MUST BE SET parameters!
 
-CENTRAL_WALLET = 'set_valid_addresss_in_config!'	# local coin address where money goes
+CENTRAL_WALLET = 'MxxxxxCHANGEME...... set_valid_addresss_in_config!'	# local coin address where money goes
 
 COINDAEMON_TRUSTED_HOST = 'localhost'
-COINDAEMON_TRUSTED_PORT = 8332
-COINDAEMON_TRUSTED_USER = 'user'
-COINDAEMON_TRUSTED_PASSWORD = 'somepassword'
+COINDAEMON_TRUSTED_PORT = 9372
+COINDAEMON_TRUSTED_USER = 'mediterraneancoinrpc'
+COINDAEMON_TRUSTED_PASSWORD = 'somepasswordCHANGEME'
 
 # Coin Algorithm is the option used to determine the algortithm used by stratum
 # This currently works with POW and POS coins
 # The available options are:
-# scrypt, sha256d, scrypt-jane and quark
+# scrypt, sha256d, scrypt-jane, quark hybridsch256
 # If the option does not meet either of these criteria stratum defaults to scrypt
 # Until AutoReward Selecting Code has been implemented the below options are used to select the type of coin
 # For Reward type there is POW and POS. please ensure you choose the currect type.
 # For Coins which support TX Messages please enter yes in the TX selection
-COINDAEMON_ALGO = 'scrypt'
+COINDAEMON_ALGO = 'hybridsch256'
 COINDAEMON_Reward = 'POW'
 COINDAEMON_TX = 'no'
 # ******************** BASIC SETTINGS ***************
@@ -47,7 +47,7 @@ STRATUM_MINING_PROCESS_NAME= 'twistd-stratum-mining'
 
 
 # Enable some verbose debug (logging requests and responses).
-DEBUG = False
+DEBUG = True 
 
 # Destination for application logs, files rotated once per day.
 LOGDIR = 'log/'
@@ -104,7 +104,7 @@ DB_PGSQL_PASS = '**empty**'
 DB_PGSQL_SCHEMA = 'public'
 # MySQL
 DB_MYSQL_HOST = 'localhost'
-DB_MYSQL_DBNAME = 'pooldb'
+DB_MYSQL_DBNAME = 'mpos'
 DB_MYSQL_USER = 'pooldb'
 DB_MYSQL_PASS = '**empty**'
 DB_MYSQL_PORT = 3306		# Default port for MySQL
@@ -135,7 +135,7 @@ ALLOW_NONLOCAL_WALLET = False				# Allow valid, but NON-Local wallet's
 PREVHASH_REFRESH_INTERVAL = 5 	# How often to check for new Blocks
 				#	If using the blocknotify script (recommended) set = to MERKLE_REFRESH_INTERVAL
 				#	(No reason to poll if we're getting pushed notifications)
-MERKLE_REFRESH_INTERVAL = 60	# How often check memorypool
+MERKLE_REFRESH_INTERVAL = 30	# How often check memorypool
 				#	This effectively resets the template and incorporates new transactions.
 				#	This should be "slow"
 
