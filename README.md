@@ -1,4 +1,4 @@
-Beta quality. Can be tested...
+Supports HybridScryptHash256 PoW for MediterraneanCoin (MED) - http://www.mediterraneancoin.org
 ============
 
 
