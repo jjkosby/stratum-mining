@@ -1,6 +1,6 @@
 [submodule "externals/stratum-mining-proxy"]
 	path = externals/stratum-mining-proxy
-	url = https://github.com/generalfault/stratum-mining-proxy
+        url = https://github.com/mrtexaznl/stratum-mining-proxy
 [submodule "externals/litecoin_scrypt"]
 	path = externals/litecoin_scrypt
 	url = https://github.com/Tydus/litecoin_scrypt.git
