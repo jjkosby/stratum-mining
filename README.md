@@ -59,7 +59,9 @@ sudo python setup.py install
 Start server:
 
 cd
+
 cd stratum-mining
+
 twistd -ny launcher.tac
 
 
