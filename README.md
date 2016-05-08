@@ -29,17 +29,6 @@ The goal is to make a reliable stratum mining server for scrypt based coins. Ove
 * Proof Of Work and Proof of Stake Coin Support
 * Transaction Messaging Support
 
-#Donations 
-* BTC:  18Xg4qP6RUvpeajanKPt5PDvvcqvU2pP6d
-* BTE:  8UJLskr8eDYATvYzmaCBw3vbRmeNweT3rW
-* DGC:  DSBb5KmGWYKMJjxk3rETtvpk9sPqgCCYAw
-* LTC:  Lg4kXMqPsmMHrGr81LLe8oHpbsMiWiuMSB
-* WDC:  WeVFgZQsKSKXGak7NJPp9SrcUexghzTPGJ
-* Doge: DLtBRYtNCzfiZfcpUeEr8KPvy5k1aR7jca
-* SRC:  sMP2wHN5H2ik7FQDPjhSzFZUWux75BYZGe
-* ARG:  AQvXPWVqGzcpH2j2XSRG7X5R9nA3y9D9aQ
-
-
 
 #Requirements
 *stratum-mining* is built in python. I have been testing it with 2.7.3, but it should work with other versions. The requirements for running the software are below.
@@ -47,50 +36,36 @@ The goal is to make a reliable stratum mining server for scrypt based coins. Ove
 * python-twisted
 * stratum
 * MySQL Server 
-* SHA256 or Scrypt CoinDaemon
+* Mediterraneancoin CoinDaemon
 
-Other coins have been known to work with this implementation. I have tested with the following coins, but there may be many others that work. 
+Other coins have been known to work with this implementation. 
 
-* Orbitcoin.
-* FireFlyCoin.
-* ByteCoin
-* DigitalCoin
-* Worldcoin
-* Argentum
-* Netcoin
-* FlorinCoin
-* CHNCoin
-* Cubits v3
-* OpenSourceCoin
-* TekCoin
-* Franko
-* Quark
-* Securecoin
 #Installation
 
-The installation of this *stratum-mining* can be found in the Repo Wiki. 
+sudo apt-get install python-twisted python-mysqldb python-dev python-setuptools python-memcache python-simplejson
+easy_install -U distribute
+git clone https://github.com/jjkosby/stratum-mining.git
+cd stratum-mining
+git submodule init
+git submodule update
+cd externals/medcoin_hybrid
+sudo python setup.py install
+cd ~
+cd stratum-mining/externals/stratum
+sudo python setup.py install 
 
-#Contact
-I am available in the #MPOS, #crypto-expert, #digitalcoin, and #worldcoin channels on freenode. 
-Although i am willing to provide support through IRC please file issues on the repo.
-<<<<<<< HEAD
-Issues as a direct result of stratum will be helped with as much as possible
-However issues related to a coin daemon's setup and other non stratum issues, 
-Please research and attempt to debug first.
-
+#Startup
 =======
-issues as a direct result of stratum will be helped with as much as possible
-However issues related to a coin daemon's setup and other non stratum issues, 
-Please research and attempt to debug first.
+Start server:
+
+cd
+cd stratum-mining
+twistd -ny launcher.tac
+
+
+
+
+
   
-#Credits
 
-* Original version by Slush0 (original stratum code)
-* More Features added by GeneralFault, Wadee Womersley and Moopless
-* Scrypt conversion from work done by viperaus 
-* PoS conversion done by TheSeven
-* Multi Algo, Vardiff, DB and MPOS support done by Ahmed_Bodi and Obigal
-
-#License
-This software is provides AS-IS without any warranties of any kind. Please use at your own risk. 
 
