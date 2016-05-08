@@ -43,16 +43,27 @@ Other coins have been known to work with this implementation.
 #Installation
 
 sudo apt-get install python-twisted python-mysqldb python-dev python-setuptools python-memcache python-simplejson
+
 easy_install -U distribute
+
 git clone https://github.com/jjkosby/stratum-mining.git
+
 cd stratum-mining
+
 git submodule init
+
 git submodule update
+
 cd externals/medcoin_hybrid
+
 sudo python setup.py install
+
 cd ~
+
 cd stratum-mining/externals/stratum
+
 sudo python setup.py install 
+
 
 #Startup
 =======
